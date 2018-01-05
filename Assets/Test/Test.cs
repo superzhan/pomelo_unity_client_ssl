@@ -7,8 +7,8 @@ using System;
 
 public class Test : MonoBehaviour {
 
-	public string gateHost="47.100.96.55";
-	public int gatePort  = 4000;
+	public string gateHost="127.0.0.1";
+	public int gatePort  = 3200;
 
 	public  PomeloClient pomeloClient=null;
 
