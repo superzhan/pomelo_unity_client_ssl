@@ -16,11 +16,11 @@ pomelo的Unity客户端，项目基于 <https://github.com/NetEase/pomelo-unityc
 
 新建客户端连接的时候可以根据需求选择 TCP连接或者 SSL 连接。
 
-```
+```C#
 pomeloClient = new PomeloClient(TransportType.SSL);  //使用SSL 加密连接
 ```
 
-```
+```C#
 pomeloClient = new PomeloClient(TransportType.TCP);  //使用TCP 连接
 ```
 
@@ -30,7 +30,7 @@ pomeloClient = new PomeloClient(TransportType.TCP);  //使用TCP 连接
 
 项目测试示例。位于目录 Assets/Test/test.cs
 
-```
+```C#
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -116,7 +116,7 @@ pclient.disconnect();
 
 2 配置服务器的 app.js
 
-```
+```javascript
 app.configure('production|development', 'gate', function(){
     app.set('connectorConfig',
         {
